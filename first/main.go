@@ -37,24 +37,7 @@ func SecondDate (d *Date){
 }
 
 func DatesToDays(d Date, d2 Date){
-	var sYear, bYear, days,i  int = 0, 0, 0, 0
 
-	if d2.Year < d.Year {
-		sYear = d2.Year
-		bYear = d.Year
-	}
-	sYear = d.Year
-	bYear = d2.Year
-
-	for i = 1; i<=(bYear - sYear); i++ {
-		if LeapYear(sYear+i){
-			days += 365
-		}else {
-			days += 364
-		}
-	}
-
-	fmt.Printf("%d", days)
 }
 
 func LeapYear(year int) bool{
